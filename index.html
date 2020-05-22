@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<title>七宮</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+		<style>
+			body {
+				background-color: hsl(201, 25%, 32%);
+				color: hsl(0, 0%, 100%);
+			}
+			.content {
+				display: flex;
+				min-width: 20rem;
+			}
+				.content > .side {
+					position: fixed;
+					margin-right: 1rem;
+				}
+					.content > .side > ul {
+						padding: 0;
+						margin: 0;
+					}
+						.content > .side > ul > li {
+							list-style: none;
+							padding: 0;
+							margin: 0;
+							margin-bottom: 1rem;
+						}
+							.content > .side > ul > li > a {
+								display: flex;
+								font-size: 1.5em;
+								color: hsl(0, 0%, 100%);
+								border: solid 1px hsl(0, 0%, 100%);
+								border-radius: 25%;
+								width: 3rem;
+								height: 3rem;
+								justify-content: center;
+								align-items: center;
+								text-decoration-line: none;
+								transition: .2s ease;
+							}
+								.content > .side > ul > li > a:hover {
+									background-color: hsla(0, 0%, 100%, 0.2);
+								}
+				.content > .main {
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					width: 100%;
+					margin-top: 5rem;
+					margin-left: 4rem;
+				}
+					.content > .main > section {
+						max-width: 30rem;
+						min-width: 16rem;
+						margin: 1rem;
+					}
+						.content > .main > section p {
+							margin: 0;
+						}
+						.content > .main > section > div {
+							margin-bottom: 2rem;
+						}
+							.content > .main > section > div > h1,
+							.content > .main > section > div > h2 {
+								margin: 1rem 0;
+								font-weight: 100;
+							}
+							.content > .main > section > div > h1 {
+								font-size: 2rem;
+							}
+							.content > .main > section > div > h1 {
+								font-size: 1.5rem;
+							}
+			#avatar {
+				width: 128px;
+				height: 128px;
+				border-radius: 25%;
+				border: 4px solid hsl(0, 0%, 100%);
+			}
+			#links a, #works a {
+				color: hsla(0, 0%, 100%, 0.6);
+				text-decoration-line: none;
+				transition: .5s ease;
+			}
+				#links a:hover, #works a:hover {
+					color: hsla(0, 0%, 100%, 1);
+				}
+
+			#works small {
+				display: block;
+				margin: 7px 0;
+				font-size: 95%;
+			}
+			#works li {
+				margin: 24px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='content'>
+			<div class='side'>
+				<ul>
+					<li><a href='https://twitter.com/Shichimiy4/' title='Twitter' target='_blank'><i class='fa fa-twitter' aria-hidden='true'></i></a></li>
+				</ul>
+			</div>
+			<div class='main'>
+				<section>
+					<div>
+						<img id='avatar' src='/resources/avatar.png' />
+						<h1>七宮</h1>
+						<p>ゲームをしたり昼寝をするのが好きです。</p>
+					</div>
+					<div>
+						<h2>好きなこと</h2>
+						<ul>
+							<li>Twitter</li>
+							<li>昼寝</li>
+							<li>ゲーム(主にPCでやってる)
+								<ul>
+									<li>Apex Legends</li>
+									<li>Call of Duty(BO2が一番好き)</li>
+									<li>Stardew Valley</li>
+									<li>Minecraft</li>
+								</ul>
+							</li>
+							<li>アニメ
+								<ul>
+									<li>中二病でも恋がしたい！</li>
+									<li>僕らはみんな河合荘</li>
+									<li>青春ブタ野郎はバニーガール先輩の夢を見ない</li>
+									<li>アルドノア・ゼロ</li>
+									<li>攻殻機動隊</li>
+								</ul>
+							</li>
+							<li>ボカロ
+								<ul>
+									<li>Orangestar</li>
+									<li>Omoi</li>
+									<li>キノシタ</li>
+									<li>DECO*27</li>
+								</ul>
+							</li>
+							<li>アーティスト
+								<ul>
+									<li>YOASOBI</li>
+									<li>ヨルシカ</li>
+									<li>ずっと真夜中でいいのに</li>
+									<li>the peggies</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id='works'>
+						<h2>苦手なこと</h2>
+						<ul>
+							<li>外に出る</li>
+							<li>知らない人と話す</li>
+							<li>早寝早起きをする</li>
+							<li>新しいことをする</li>
+							<li>ホラー系全般</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
